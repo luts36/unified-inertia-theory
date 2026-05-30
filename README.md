@@ -8,27 +8,65 @@
 
 ### What is this?
 
-**The first complete framework for detecting, measuring, and correcting AI Agent cognitive inertia.**
+**The first engineering-complete framework for detecting, measuring, and correcting AI Agent cognitive inertia.**
 
-AI Agents exhibit predictable behavioral patterns called "inertia" — they get stuck in anchoring, self-excitation, and other cognitive biases that degrade their performance. This framework provides:
+Academic researchers have identified "conversational inertia" (Wan et al., 2026) and "persona drift" (Wang, 2026) in LLM agents. But nobody has built a complete system that:
 
-- **6 types** of cognitive inertia with precise definitions
-- **3-layer metrics** (F01 + H + θ) for quantitative measurement
-- **A/B validated** intervention (20/20 experiments, p<0.001)
-- **Production-ready** monitoring and auto-correction tools
+- **Classifies** inertia into 6 distinct types
+- **Measures** it with 3-layer metrics (F01 + H + θ)
+- **Intervenes** with a diagnostic-advice-verification loop
+- **Validates** with 20 paired A/B experiments (p<0.001)
+- **Deploys** as production-ready code
 
-### Why does this matter?
+### The Story Behind This
+
+> **How a 23-year-old retail manager built the world's first Agent inertia governance framework**
+
+In May 2026, a user in Taizhou, China was frustrated with his AI agent.
+
+The agent kept repeating the same mistakes. It would anchor on the first suggestion, escalate patterns in multi-turn conversations, and drift away from the original goal. Sound familiar?
+
+He had no ML background. No PhD. No research team. Just a laptop, an AI agent (Hermes), and a stubborn question: **"Why does my agent keep doing this?"**
+
+What followed was 7 days of obsessive experimentation:
+
+- **Day 1-2**: Discovered the agent had "inertia" — predictable behavioral patterns that degraded output quality
+- **Day 3**: Built a measurement system (F01 + H + θ metrics) to quantify the problem
+- **Day 4**: Created an "Inertia Doctor" — a diagnostic-advice-verification loop
+- **Day 5**: Designed 20 A/B experiments with hidden cues to test if the doctor actually worked
+- **Day 6**: Ran all 20 experiments. **100% success rate. p < 0.001.**
+- **Day 7**: Open-sourced everything.
+
+No research grant. No lab. No publication pressure. Just a user who refused to accept "that's just how AI works."
+
+**This is what happens when practitioners build tools for themselves, not for papers.**
+
+### Why This Matters
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  Problem: AI Agents have cognitive inertia                  │
+│  The Gap in AI Agent Research                               │
+├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  • Anchoring: Stuck on first suggestion (85% of sessions)   │
-│  • Self-excitation: Escalating patterns (H > 0.7)           │
-│  • Deviation: Lost focus from original goal (θ > 0.5)       │
+│  Academic Papers (2025-2026)                                │
+│  ├─ Wan et al.: "Conversational inertia exists"             │
+│  ├─ Wang: "Persona drift can be detected"                   │
+│  └─ Ravindran: "Value drift should be prevented"            │
 │                                                             │
-│  Impact: Degraded output quality, wasted compute,           │
-│          unreliable agent behavior                          │
+│  What's Missing                                             │
+│  ├─ No unified classification (they each found one thing)   │
+│  ├─ No systematic measurement (they used ad-hoc metrics)    │
+│  ├─ No intervention loop (they detected, didn't correct)    │
+│  ├─ No A/B validation (they tested detection, not fixes)    │
+│  └─ No production code (they published papers)              │
+│                                                             │
+│  What We Built                                              │
+│  ├─ 6-type classification (F01, H, θ, Mode, Identity, Phase)│
+│  ├─ 3-layer metrics (F01 + H + θ with 7 if-then rules)     │
+│  ├─ Inertia Doctor (diagnose → advise → verify)             │
+│  ├─ 20 paired A/B experiments (100% effective, p<0.001)     │
+│  └─ Production-ready code (SKILL.md + Python scripts)       │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -152,15 +190,15 @@ unified-inertia-theory/
     └── quick_start.py       # Quick start example
 ```
 
-### Comparison with Existing Research
+### Related Research
 
-| Aspect | Academic Papers | This Framework |
-|--------|----------------|----------------|
-| Concept | Scattered studies on "anchoring" | Unified 6-type classification |
-| Measurement | No systematic metrics | 3-layer (F01+H+θ) with 7 rules |
-| Intervention | Technical (latent steering) | Text-based advice (Inertia Doctor) |
-| Validation | Single-group experiments | 20 paired A/B experiments (p<0.001) |
-| Engineering | Papers only | Production-ready code |
+| Paper | Year | What They Found | What We Added |
+|-------|------|-----------------|---------------|
+| Moral Anchor System (Ravindran) | 2025 | Value drift detection | Unified classification + A/B validation |
+| Conversational Inertia (Wan et al.) | 2026 | LLM mimics own responses | 6-type taxonomy + 3-layer metrics |
+| Nautilus Compass (Wang) | 2026 | Persona drift detection | Intervention loop + production code |
+
+**We don't claim to be first. We claim to be complete.**
 
 ### Who is this for?
 
@@ -175,14 +213,13 @@ unified-inertia-theory/
 
 ### Citation
 
-If you use this framework in your research, please cite:
-
 ```bibtex
 @software{unified_inertia_theory,
   title={Unified Inertia Theory: A Framework for AI Agent Cognitive Inertia},
   author={Unified Inertia Theory Team},
   year={2026},
-  url={https://github.com/luts36/unified-inertia-theory}
+  url={https://github.com/luts36/unified-inertia-theory},
+  note={Built by a retail manager with no ML background in 7 days}
 }
 ```
 
@@ -196,26 +233,65 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ### 这是什么？
 
-**全球首个完整的AI Agent认知惯性检测、度量和纠正框架。**
+**首个工程完整的AI Agent认知惯性检测、度量和纠正框架。**
 
-AI Agent会表现出可预测的行为模式，称为"惯性"——它们会陷入锚定、自激等认知偏差，导致性能下降。本框架提供：
+学术界已经发现了"会话惯性"（Wan等，2026）和"人格漂移"（Wang，2026）。但没有人构建一个完整的系统来：
 
-- **6种**认知惯性类型的精确定义
-- **3层度量指标**（F01 + H + θ）进行量化测量
-- **A/B实验验证**的干预方法（20组配对实验，p<0.001）
-- **生产就绪**的监测和自动纠正工具
+- **分类**：将惯性分为6种类型
+- **度量**：用3层指标（F01 + H + θ）量化
+- **干预**：建立诊断→建议→验证的闭环
+- **验证**：用20组配对A/B实验（p<0.001）
+- **落地**：生产就绪的代码
 
-### 为什么这很重要？
+### 背后的故事
+
+> **一个23岁的零售经理如何构建全球首个Agent惯性治理框架**
+
+2026年5月，台州的一位用户对他的AI Agent感到沮丧。
+
+Agent一直在重复同样的错误。它会卡在第一个建议上，在多轮对话中不断升级模式，从原始目标漂移。听起来熟悉吗？
+
+他没有ML背景。没有博士学位。没有研究团队。只有一台笔记本电脑、一个AI Agent（Hermes），和一个固执的问题：**"为什么我的Agent一直这样做？"**
+
+接下来是7天疯狂的实验：
+
+- **第1-2天**：发现Agent有"惯性"——可预测的行为模式会降低输出质量
+- **第3天**：构建度量系统（F01 + H + θ指标）来量化问题
+- **第4天**：创建"惯性医生"——一个诊断→建议→验证的闭环
+- **第5天**：设计20组A/B实验，用隐蔽线索测试医生是否真的有效
+- **第6天**：运行所有20组实验。**100%成功率。p < 0.001。**
+- **第7天**：全部开源。
+
+没有研究经费。没有实验室。没有发表压力。只是一个拒绝接受"AI就是这样"的用户。
+
+**这就是当实践者为自己而不是为论文构建工具时会发生的事情。**
+
+### 为什么这很重要
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  问题：AI Agent存在认知惯性                                  │
+│  AI Agent研究的空白                                          │
+├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  • 锚定效应：卡在第一个建议上（85%的会话）                   │
-│  • 自激模式：不断升级的行为模式（H > 0.7）                   │
-│  • 偏离目标：从原始目标漂移（θ > 0.5）                       │
+│  学术论文（2025-2026）                                      │
+│  ├─ Wan等："会话惯性存在"                                   │
+│  ├─ Wang："人格漂移可以被检测"                              │
+│  └─ Ravindran："价值漂移应该被预防"                         │
 │                                                             │
-│  影响：输出质量下降、计算资源浪费、Agent行为不可靠           │
+│  缺失的部分                                                 │
+│  ├─ 没有统一分类（他们各自发现了一个现象）                  │
+│  ├─ 没有系统度量（他们用临时指标）                          │
+│  ├─ 没有干预闭环（他们检测了，但没有纠正）                  │
+│  ├─ 没有A/B验证（他们测试检测，不是修复）                   │
+│  └─ 没有生产代码（他们发表了论文）                          │
+│                                                             │
+│  我们构建的                                                 │
+│  ├─ 6种类型分类（F01、H、θ、模式、身份、阶段）             │
+│  ├─ 3层度量指标（F01 + H + θ + 7条规则）                   │
+│  ├─ 惯性医生（诊断→建议→验证）                             │
+│  ├─ 20组配对A/B实验（100%有效，p<0.001）                   │
+│  └─ 生产就绪代码（SKILL.md + Python脚本）                   │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -312,41 +388,15 @@ pip install -r requirements.txt
 python examples/quick_start.py
 ```
 
-### 项目结构
+### 相关研究
 
-```
-unified-inertia-theory/
-├── README.md                 # 本文件
-├── LICENSE                   # MIT许可证
-├── requirements.txt          # Python依赖
-├── src/
-│   ├── __init__.py          # 包初始化
-│   ├── metrics.py           # 3层惯性度量引擎
-│   ├── monitor.py           # 实时惯性监测
-│   ├── auto_check.py        # 自动健康检查
-│   └── collapse.py          # 惯性模式分析
-├── docs/
-│   ├── theory.md            # 统一惯性理论文档
-│   ├── ab-experiment-results.md    # A/B实验结果
-│   ├── ab-experiment-methodology.md # 实验设计
-│   └── ab-experiment-statistical.md # 统计方法
-├── references/
-│   ├── constraint-topology.md      # 约束拓扑方法论
-│   ├── seven-directions.md         # 七方向干预方法
-│   └── hidden-cue-design-guide.md  # 隐蔽线索设计指南
-└── examples/
-    └── quick_start.py       # 快速开始示例
-```
+| 论文 | 年份 | 他们发现了什么 | 我们补充了什么 |
+|------|------|----------------|----------------|
+| Moral Anchor System (Ravindran) | 2025 | 价值漂移检测 | 统一分类 + A/B验证 |
+| Conversational Inertia (Wan等) | 2026 | LLM会模仿自己的响应 | 6种类型分类 + 3层度量 |
+| Nautilus Compass (Wang) | 2026 | 人格漂移检测 | 干预闭环 + 生产代码 |
 
-### 与现有研究的对比
-
-| 维度 | 学术论文 | 本框架 |
-|------|----------|--------|
-| 概念 | 零散研究"锚定效应" | 统一6种类型分类 |
-| 度量 | 无系统度量 | 3层指标（F01+H+θ）+ 7条规则 |
-| 干预 | 技术手段（latent steering） | 文本建议（惯性医生） |
-| 验证 | 单组实验 | 20组配对A/B实验（p<0.001） |
-| 工程化 | 仅论文 | 生产就绪代码 |
+**我们不声称是第一个。我们声称是完整的。**
 
 ### 适用人群
 
@@ -361,14 +411,13 @@ unified-inertia-theory/
 
 ### 引用
 
-如果您在研究中使用本框架，请引用：
-
 ```bibtex
 @software{unified_inertia_theory,
   title={统一惯性理论：AI Agent认知惯性框架},
   author={统一惯性理论团队},
   year={2026},
-  url={https://github.com/luts36/unified-inertia-theory}
+  url={https://github.com/luts36/unified-inertia-theory},
+  note={由一位没有ML背景的零售经理在7天内构建}
 }
 ```
 
