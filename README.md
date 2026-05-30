@@ -10,7 +10,7 @@
 
 **The first engineering-complete framework for detecting, measuring, and correcting AI Agent cognitive inertia.**
 
-Built in under 30 days. No research team. No academic background. No references. Pure self-exploration from daily Agent usage.
+Built in under 27 days. No research team. No academic background. No references. Pure self-exploration from daily Agent usage.
 
 ### The Story
 
@@ -250,7 +250,7 @@ unified-inertia-theory/
   author={Unified Inertia Theory Team},
   year={2026},
   url={https://github.com/luts36/unified-inertia-theory},
-  note={Built in 30 days, from zero, with no references}
+  note={Built in 27 days, from zero, with no references}
 }
 ```
 
@@ -266,11 +266,11 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 **首个工程完整的AI Agent认知惯性检测、度量和纠正框架。**
 
-30天内构建。没有研究团队。没有学术背景。没有参考文献。纯粹从日常Agent使用中自我摸索。
+27天内构建。没有研究团队。没有学术背景。没有参考文献。纯粹从日常Agent使用中自我摸索。
 
 ### 故事
 
-> **从零到完整框架，30天**
+> **从零到完整框架，27天**
 
 2026年5月3日，我第一次使用AI Agent。
 
@@ -337,7 +337,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 │  ├─ 用20组配对A/B实验验证                                   │
 │  └─ 发布可用的代码                                          │
 │                                                             │
-│  我做到的（一个人，30天）                                   │
+│  我做到的（一个人，27天）                                   │
 │  ├─ 6种类型分类（从观察中发现，不是从论文中学习）           │
 │  ├─ 3层度量指标（F01 + H + θ，从零构建）                   │
 │  ├─ 惯性医生（诊断→建议→验证）                             │
@@ -479,7 +479,7 @@ python examples/quick_start.py
   author={统一惯性理论团队},
   year={2026},
   url={https://github.com/luts36/unified-inertia-theory},
-  note={30天从零构建，无参考，纯自我摸索}
+  note={27天从零构建，无参考，纯自我摸索}
 }
 ```
 
