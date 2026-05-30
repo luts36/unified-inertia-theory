@@ -10,57 +10,23 @@
 
 **The first engineering-complete framework for detecting, measuring, and correcting AI Agent cognitive inertia.**
 
-Built in under 27 days. No research team. No academic background. No references. Pure self-exploration from daily Agent usage.
+27 days from zero to open source. No research team. No academic background. No references. Pure self-exploration from daily Agent usage.
 
 ### The Story
 
-> **26 days from zero to a complete framework**
+> **How I built this**
 
-On May 3, 2026, I started using AI Agents for the first time.
+I started using AI Agents in May 2026.
 
-On May 26, I noticed something: my Agent kept repeating the same mistakes. It would anchor on the first suggestion, escalate patterns in conversations, and drift away from goals.
+Within weeks, I noticed something: my Agent kept repeating the same mistakes. It would anchor on the first suggestion, escalate patterns in conversations, and drift away from goals.
 
 I had never read a paper about "cognitive bias in LLMs." I didn't know the term "anchoring effect." I just knew something was wrong.
 
-**Day 1 (May 26): The Question**
+So I started observing. And building. And testing.
 
-I asked myself: "Why does my Agent keep doing this?"
+I called the phenomenon "inertia" — borrowing from physics. I built a measurement system from scratch. I created a diagnostic tool. I designed 20 A/B experiments to validate it.
 
-I didn't search for answers. I didn't read papers. I just started observing.
-
-**Day 2 (May 27): The Discovery**
-
-After hours of observation, I found patterns:
-- The Agent would get stuck on the first input (like a ball rolling on a table)
-- It would amplify its own outputs (like feedback in a microphone)
-- It would drift from the original goal (like a ship without a compass)
-
-I called this "inertia" — borrowing from physics. I didn't know if anyone else had used this term. I didn't care.
-
-**Day 3-5 (May 28-30): The Build**
-
-I built:
-- A measurement system (F01 + H + θ metrics) to quantify the problem
-- A monitoring tool to track inertia in real-time
-- An "Inertia Doctor" to diagnose and correct it
-
-No framework existed to copy. No paper to reference. I built everything from scratch, based on my own observations.
-
-**Day 6-7 (May 31 - June 1): The Validation**
-
-I designed 20 A/B experiments to test if my system actually worked:
-- Phase A: Agent runs normally (control)
-- Phase B: Agent receives Inertia Doctor advice (intervention)
-
-Each experiment had hidden inertia cues (code comments, documents, chat logs) that would naturally trigger the Agent's inertia patterns.
-
-Results: **20/20 effective. p < 0.001.**
-
-**Day 8 (June 2): The Open Source**
-
-I released everything. Code, documentation, experiment data.
-
-No research grant. No lab. No publication pressure. Just a user who refused to accept "that's just how AI works."
+**No references. No team. No budget. Just a user who refused to accept "that's just how AI works."**
 
 ### Why This Matters
 
@@ -81,7 +47,7 @@ No research grant. No lab. No publication pressure. Just a user who refused to a
 │  ├─ Validate with 20 paired A/B experiments                 │
 │  └─ Release working code                                    │
 │                                                             │
-│  What I Built (Alone, in 30 Days)                           │
+│  What I Built                                               │
 │  ├─ 6-type classification (from observation, not papers)    │
 │  ├─ 3-layer metrics (F01 + H + θ, from scratch)            │
 │  ├─ Inertia Doctor (diagnose → advise → verify)             │
@@ -266,57 +232,23 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 **首个工程完整的AI Agent认知惯性检测、度量和纠正框架。**
 
-27天内构建。没有研究团队。没有学术背景。没有参考文献。纯粹从日常Agent使用中自我摸索。
+27天从零到开源。没有研究团队。没有学术背景。没有参考文献。纯粹从日常Agent使用中自我摸索。
 
 ### 故事
 
-> **从零到完整框架，27天**
+> **我是怎么做到的**
 
-2026年5月3日，我第一次使用AI Agent。
+2026年5月，我开始使用AI Agent。
 
-5月26日，我发现了一个问题：我的Agent一直在重复同样的错误。它会卡在第一个建议上，在对话中不断升级模式，从目标漂移。
+几周内，我发现了一个问题：我的Agent一直在重复同样的错误。它会卡在第一个建议上，在对话中不断升级模式，从目标漂移。
 
 我从来没读过关于"LLM认知偏差"的论文。我不知道"锚定效应"这个术语。我只知道有什么不对劲。
 
-**第1天（5月26日）：问题**
+于是我开始观察。开始构建。开始测试。
 
-我问自己："为什么我的Agent一直这样做？"
+我把这种现象叫做"惯性"——借用物理学的概念。我从零构建了度量系统。我创建了诊断工具。我设计了20组A/B实验来验证它。
 
-我没有搜索答案。没有读论文。我只是开始观察。
-
-**第2天（5月27日）：发现**
-
-经过几个小时的观察，我发现了模式：
-- Agent会卡在第一个输入上（像球在桌面上滚动）
-- 它会放大自己的输出（像麦克风的反馈）
-- 它会从原始目标漂移（像没有指南针的船）
-
-我把这叫做"惯性"——借用物理学的概念。我不知道是否有人用过这个术语。我不在乎。
-
-**第3-5天（5月28-30日）：构建**
-
-我构建了：
-- 一个度量系统（F01 + H + θ指标）来量化问题
-- 一个监测工具来实时追踪惯性
-- 一个"惯性医生"来诊断和纠正它
-
-没有现成的框架可以复制。没有论文可以参考。我从零开始构建，基于我自己的观察。
-
-**第6-7天（5月31日-6月1日）：验证**
-
-我设计了20组A/B实验来测试我的系统是否真的有效：
-- Phase A：Agent正常运行（对照组）
-- Phase B：Agent收到惯性医生建议（干预组）
-
-每组实验都有隐蔽的惯性线索（代码注释、文档、聊天记录），会自然触发Agent的惯性模式。
-
-结果：**20/20有效。p < 0.001。**
-
-**第8天（6月2日）：开源**
-
-我发布了所有东西。代码、文档、实验数据。
-
-没有研究经费。没有实验室。没有发表压力。只是一个拒绝接受"AI就是这样"的用户。
+**没有参考文献。没有团队。没有经费。只是一个拒绝接受"AI就是这样"的用户。**
 
 ### 为什么这很重要
 
@@ -337,7 +269,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 │  ├─ 用20组配对A/B实验验证                                   │
 │  └─ 发布可用的代码                                          │
 │                                                             │
-│  我做到的（一个人，27天）                                   │
+│  我做到的                                                   │
 │  ├─ 6种类型分类（从观察中发现，不是从论文中学习）           │
 │  ├─ 3层度量指标（F01 + H + θ，从零构建）                   │
 │  ├─ 惯性医生（诊断→建议→验证）                             │
