@@ -16,7 +16,7 @@ Built in under 30 days. No research team. No academic background. No references.
 
 > **26 days from zero to a complete framework**
 
-On May 1, 2026, I started using AI Agents for the first time.
+On May 3, 2026, I started using AI Agents for the first time.
 
 On May 26, I noticed something: my Agent kept repeating the same mistakes. It would anchor on the first suggestion, escalate patterns in conversations, and drift away from goals.
 
@@ -272,7 +272,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 > **从零到完整框架，30天**
 
-2026年5月1日，我第一次使用AI Agent。
+2026年5月3日，我第一次使用AI Agent。
 
 5月26日，我发现了一个问题：我的Agent一直在重复同样的错误。它会卡在第一个建议上，在对话中不断升级模式，从目标漂移。
 
